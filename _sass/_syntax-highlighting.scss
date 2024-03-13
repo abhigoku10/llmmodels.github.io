@@ -1,14 +1,24 @@
 /**
  * Syntax highlighting styles
  */
-$spacing-unit:     30px;
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+// $spacing-unit:     30px;
+// %vertical-rhythm {
+//     margin-bottom: $spacing-unit / 2;
+// }
+
+// Import the math module
+@use 'sass:math';
+
+$spacing-unit: 30px; // Define your spacing unit
+
+.example {
+  margin-bottom: math.div($spacing-unit, 2);
 }
 
 .highlight {
     background: #fffff8;
-    @extend %vertical-rhythm;
+    // @extend %vertical-rhythm;
+    @extend %vertical-rhythm !optional;
 
     .c     { color: #998; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error

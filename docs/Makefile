@@ -8,5 +8,5 @@ publish:
 	git init && \
 	git add . && \
 	git commit -m 'publish site' && \
-	git remote add origin https://github.com/deepgenerativemodels/notes.git && \
-	git push origin master:refs/heads/gh-pages --force
+	git remote add origin https://github.com/abhigoku10/llmmodels.github.io.git && \
+	git push origin main:refs/heads/gh-pages --force
